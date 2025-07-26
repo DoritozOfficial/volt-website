@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volt Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
+    .text {
+      color: #ddb500;
+      text-shadow: 0 0 10px #e2b900, 0 0 20px #a58700;
+    }
+    .thing {
+      backdrop-filter: blur(2px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .thing:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(156, 146, 0, 0.3);
+      border-color: rgba(229, 255, 0, 0.2);
+    }
+    .thing1 {
+      backdrop-filter: blur(2px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .thing1:hover {
+      transform: scale(1.002);
+      box-shadow: 0 0 20px rgba(156, 146, 0, 0.3);
+      border-color: rgba(229, 255, 0, 0.2);
+    }
+    .download {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .download:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 208, 0, 0.4);
+    }
+    .discord {
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .discord:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(114, 137, 218, 0.4);
+    }
+  </style>
+</head>
+<body class="text-white">
+  <div id="tsparticles" class="fixed inset-0 -z-10"></div>
+
+  <nav class="fixed top-0 left-0 w-full bg-[#0c0c0c] bg-opacity-10 backdrop-blur border-b border-gray-800 z-50">
+    <div class="flex px-6 py-3">
+      <ul class="flex ml-auto space-x-2 md:text-base">
+        <a href="#discord" class="thing hover:bg-[#FFFFFF0D] rounded-xl px-4 py-1">Discord</a></li>
+        <a href="#download" class="thing hover:bg-[#FFFFFF0D] rounded-xl px-4 py-1">Download</a></li>
+        <a href="#features" class="thing hover:bg-[#FFFFFF0D] rounded-xl px-4 py-1">Features</a></li>
+      </ul>
+  </nav>
+
+  <section class="text-center mt-24">
+    <h1 class="text-5xl md:text-7xl font-bold text">Volt Mod Menu</h1>
+    <p class="mt-3 text-lg text-gray-300">The Future Of Gorilla Tag Modding.</p>
+  </section>
+
+  <section id="features" class="py-20 max-w-6xl mx-auto">
+    <h2 class="text md:text-4xl font-bold text-center mb-12">Key Features</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+
+      <div class="thing bg-[#FFFFFF0D] p-6 rounded-xl">
+        <h3 class="text-xl font-semibold text-orange-400">Sleek UI</h3>
+        <p class="text-gray-300 mt-2">Enjoy a sleek interface that is completely unique.</p>
+      </div>
+
+      <div class="thing bg-[#FFFFFF0D] p-6 rounded-xl">
+        <h3 class="text-xl font-semibold text-orange-400">Optimization</h3>
+        <p class="text-gray-300 mt-2">Enjoy little to no lag so you can have the smoothest modding experience.</p>
+      </div>
+
+      <div class="thing bg-[#FFFFFF0D] p-6 rounded-xl">
+        <h3 class="text-xl font-semibold text-orange-400">Reliability</h3>
+        <p class="text-gray-300 mt-2">Volt will have frequent updates ensuring your safety.</p>
+      </div>
+
+      <div class="thing bg-[#FFFFFF0D] p-7 rounded-xl">
+        <h3 class="text-xl font-semibold text-orange-400">Active Community</h3>
+        <p class="text-gray-300 mt-2">Unlike others, we listen to your suggestions and add what we can.</p>
+      </div>
+
+      <div class="thing bg-[#FFFFFF0D] p-6 rounded-xl">
+        <h3 class="text-xl font-semibold text-orange-400">Ease Of Use</h3>
+        <p class="text-gray-300 mt-2">Volt's unique UI allows you to get comfortable with using it fast.</p>
+      </div>
+
+      <div class="thing bg-[#FFFFFF0D] p-6 rounded-xl">
+        <h3 class="text-xl font-semibold text-orange-400">Undetected</h3>
+        <p class="text-gray-300 mt-2">Volt will be undetected with every update so you don’t get banned.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="download" class="thing1 bg-[#FFFFFF0D] py-10 px-6 text-center rounded-xl max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text mb-6">Download Volt</h2>
+    <p class="text-gray-400 mb-6">Click the button below to download and use Volt!</p>
+    <a href="https://github.com/menker-cs/Hidden/releases/download/HiddenV9/Hidden.dll" class="download inline-block px-8 py-3 bg-orange-400 hover:bg-orange-300 text-black font-bold rounded-xl">Download Volt</a>
+  </section>
+
+  <section id="discord" class="thing1 bg-[#FFFFFF0D] py-10 px-6 text-center rounded-xl max-w-6xl mx-auto mt-12">
+    <h2 class="text-4xl font-bold text mb-4">Join Our Discord</h2>
+    <p class="text-gray-400 mb-6">Join our Discord server if you need help with the menu!</p>
+    <a href="https://discord.gg/7zumkwPwVy" target="_blank" class="discord inline-block px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl">Join Discord</a>
+  </section>
+
+  <footer class="mt-12 py-6 text-center text-gray-500 text-sm border-t border-gray-800">
+    &copy; 2025 Volt Mod Menu. Not affiliated with Gorilla Tag or Another Axiom.
+  </footer>
+
+  <!-- By @glxy._.2 -->
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: false },
+      background: { color: "#0a0a0a" },
+      particles: {
+        number: { value: 75 },
+        color: { value: "#facc15" },
+        opacity: { value: 0.4 },
+        size: { value: 3 },
+        links: {
+          enable: true,
+          distance: 170,
+          color: "#facc15",
+          opacity: 0.2,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1.35,
+          outModes: { default: "bounce" }
+        }
+      },
+      interactivity: {
+        events: { onHover: { enable: true, mode: "grab" } },
+        grab: { distance: 170, line_linked: { opacity: 0.8 } },
+      }
+    });
+  </script>
+</body>
+</html>
